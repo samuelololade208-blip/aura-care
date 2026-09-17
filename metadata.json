@@ -1,0 +1,6 @@
+{
+  "name": "Aura Care - Hospital Management System",
+  "description": "Simple and modern liquid-glass Hospital Management System for Aura Care featuring patient management, appointments, records, billing, pharmacy, and laboratory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

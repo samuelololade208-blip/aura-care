@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #fcf8ff;
+    --card-glass: rgba(255, 255, 255, 0.78);
+    --card-glass-border: rgba(168, 85, 247, 0.18);
+    --card-glass-shadow: 0 10px 30px -10px rgba(109, 40, 217, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  .dark {
+    --bg-canvas: #0f0a1e;
+    --card-glass: rgba(26, 20, 48, 0.78);
+    --card-glass-border: rgba(168, 85, 247, 0.25);
+    --card-glass-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Plus Jakarta Sans", "Manrope", sans-serif;
+    background-color: var(--bg-canvas);
+    color: #181445;
+  }
+
+  .dark body {
+    color: #f3eeff;
+  }
+}
+
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(109, 40, 217, 0.08), 0 2px 6px rgba(147, 51, 234, 0.03);
+}
+
+.dark .liquid-glass {
+  background: rgba(26, 20, 48, 0.78);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
+}
+
+.liquid-glass-subtle {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+}
+
+.dark .liquid-glass-subtle {
+  background: rgba(30, 23, 56, 0.55);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+.liquid-glass-elevated {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border: 1px solid rgba(168, 85, 247, 0.24);
+  box-shadow: 0 20px 48px -12px rgba(109, 40, 217, 0.14), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+}
+
+.dark .liquid-glass-elevated {
+  background: rgba(33, 24, 62, 0.92);
+  border: 1px solid rgba(168, 85, 247, 0.32);
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+/* Custom scrollbar for clean hospital interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(147, 51, 234, 0.45);
+}
